@@ -167,5 +167,8 @@ if __name__ == "__main__":
                 )
                 audio_clips = []
 
-    time_str = timedelta(seconds=round(time.time() - start_time))
-    print(f"Execution Time: {time_str} (HH:MM:SS)")
+    elapsed_time = timedelta(seconds=round(time.time() - start_time))
+    elapsed_time_str = f"Execution Time: {time_str} (HH:MM:SS)"
+    with open(f"benchmark_time.txt", "r") as t:
+        f.write(elapsed_time_str)
+    print(elapsed_time_str)
