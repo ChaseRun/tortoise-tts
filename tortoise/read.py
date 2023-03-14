@@ -11,7 +11,7 @@ from utils.audio import load_audio, load_voices
 from utils.text import split_and_recombine_text
 
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time()
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
